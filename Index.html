@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Initiate Task</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 1.5rem;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <button id="initiate-button">Initiate</button>
+
+    <script>
+        document.getElementById('initiate-button').addEventListener('click', function() {
+            window.open('https://www.google.com', '_blank'); // Opens a new tab with Google for demonstration
+        });
+    </script>
+</body>
+</html>
